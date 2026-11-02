@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bhavesh Agrawal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Bhavesh Agrawal, home"><span class="brand-mark"
+          aria-hidden="true">BA</span></a>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.5" />
+            <path
+              d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8L6 18M18 6l1.8-1.8" />
+          </svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+          aria-label="Open menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="hero-role"><span class="status-dot" aria-hidden="true"></span>Frontend developer · Bhilai, India ·
+          Open to junior roles</p>
+        <h1 id="hero-title"><span>Bhavesh</span><span>Agrawal</span></h1>
+        <p class="hero-lede">I build responsive, accessible interfaces with <strong>React and Next.js</strong>, and I
+          like projects where the interface has real work to do.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#portfolio">See my projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="code-card" role="img" aria-label="Code sample: a React component that renders a developer profile">
+        <div class="code-bar"><i></i><i></i><i></i><span>Profile.jsx</span></div>
+        <pre><code><span class="c-c">// what I work with every day</span>
+<span class="c-k">const</span> <span class="c-f">developer</span> = {
+  name: <span class="c-s">"Bhavesh Agrawal"</span>,
+  focus: <span class="c-s">"Frontend"</span>,
+  stack: [
+    <span class="c-s">"HTML"</span>, <span class="c-s">"CSS"</span>, <span class="c-s">"JavaScript"</span>,
+    <span class="c-s">"React"</span>, <span class="c-s">"Next.js"</span>
+  ],
+  education: <span class="c-s">"BCA, 2024"</span>,
+  lookingFor: <span class="c-s">"Junior developer role"</span>
+};</code></pre>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="section-head">
+        <h2 id="about-title">About me</h2>
+        <p>A short introduction to who I am and how I work.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a frontend developer from Bhilai who turned a BCA degree into a daily habit of building things in the
+            browser.</p>
+          <p>Since graduating in 2024 I have been teaching myself modern web development, mostly by shipping projects: a
+            store landing page, a task manager, this portfolio, and a few larger ideas that go beyond the browser.</p>
+          <p>I care about pages that load quickly, read clearly and work with a keyboard. I'm now looking for a junior
+            full stack role where I can keep learning on a real team.</p>
+        </div>
+        <dl class="facts">
+          <div>
+            <dt>Location</dt>
+            <dd>Bhilai, Chhattisgarh, India</dd>
+          </div>
+          <div>
+            <dt>Education</dt>
+            <dd>BCA, Rungta College of Science and Technology (2021–2024)</dd>
+          </div>
+          <div>
+            <dt>Focus</dt>
+            <dd>Frontend, moving toward full stack</dd>
+          </div>
+          <div>
+            <dt>Looking for</dt>
+            <dd>Junior Full Stack Developer roles</dd>
+          </div>
+        </dl>
+      </div>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Foundations</h3>
+          <p>Semantic markup, layout and behaviour without a framework.</p>
+          <ul class="chips">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive design</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Frameworks</h3>
+          <p>Component-based interfaces and routing for production sites.</p>
+          <ul class="chips">
+            <li>ReactJS</li>
+            <li>NextJS</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Workflow</h3>
+          <p>Version control and AI-assisted development, with every line reviewed.</p>
+          <ul class="chips">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>AI tooling</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="section-head">
+        <h2 id="portfolio-title">Portfolio</h2>
+        <p>Selected projects, from finished interfaces to products I'm still building.</p>
+      </div>
+      <div class="projects">
+        <article class="project featured">
+          <div class="project-visual" aria-hidden="true">
+            <div class="viz">
+              <div class="wave" id="wave"></div>
+              <p class="listen">Listening… <b>“open the browser”</b></p>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span class="pill ok">Featured</span><span class="mono">Python · Offline</span>
+            </div>
+            <h3>Deku, a voice-controlled desktop agent</h3>
+            <p>A desktop assistant that listens, thinks and acts without sending anything to the cloud. It runs fully
+              offline on a gaming laptop.</p>
+            <ul class="points">
+              <li>Speech to text with Whisper, replies from Mistral through Ollama</li>
+              <li>Spoken answers with edge-tts and desktop control with pyautogui</li>
+              <li>Fetches live gold and BTC prices on request</li>
+            </ul>
+            <ul class="chips">
+              <li>Python</li>
+              <li>Whisper</li>
+              <li>Ollama</li>
+              <li>Mistral</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-visual" aria-hidden="true">
+            <div class="viz rows">
+              <div class="row"><span>INV-1042</span><span class="tag paid">Paid</span></div>
+              <div class="row"><span>INV-1043</span><span class="tag due">Due in 3 days</span></div>
+              <div class="row"><span>INV-1038</span><span class="tag over">Overdue</span></div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span class="pill wip">In progress</span><span class="mono">Web app</span></div>
+            <h3>Invoice and payment automation</h3>
+            <p>A receivables product that creates invoices, sends reminders before and after the due date, and matches
+              payments to invoices on a dashboard.</p>
+            <ul class="chips">
+              <li>ReactJS</li>
+              <li>NextJS</li>
+              <li>Dashboard UI</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-visual" aria-hidden="true">
+            <div class="viz tiles">
+              <div class="tile"><i></i><b>Everyday tee</b><span>₹799</span></div>
+              <div class="tile"><i></i><b>Canvas tote</b><span>₹549</span></div>
+              <div class="tile"><i></i><b>Desk mat</b><span>₹1,199</span></div>
+              <div class="tile"><i></i><b>Steel bottle</b><span>₹649</span></div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span class="pill ok">Completed</span><span class="mono">Landing page</span></div>
+            <h3>E-commerce landing page</h3>
+            <p>A responsive storefront landing page with a product grid, clear calls to action and a layout that holds
+              up from phone to desktop.</p>
+            <ul class="chips">
+              <li>ReactJS</li>
+              <li>CSS</li>
+              <li>GitHub</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-visual" aria-hidden="true">
+            <div class="viz todo">
+              <div class="done"><em></em><span>Write project README</span></div>
+              <div><em></em><span>Add keyboard shortcuts</span></div>
+              <div><em></em><span>Deploy to production</span></div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span class="pill ok">Completed</span><span class="mono">Web app</span></div>
+            <h3>Todo app</h3>
+            <p>A task manager built to practise React state and component structure: add, complete and remove tasks with
+              a clean, focused interface.</p>
+            <ul class="chips">
+              <li>ReactJS</li>
+              <li>JavaScript</li>
+              <li>GitHub</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-visual" aria-hidden="true">
+            <div class="viz layout-sketch"><i class="wide"></i><i class="accent"></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span class="pill ok">Completed</span><span class="mono">Website</span></div>
+            <h3>Personal portfolio</h3>
+            <p>The site you are on. It has a light and dark theme, keyboard-friendly navigation and a layout built
+              mobile first.</p>
+            <ul class="chips">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="section-head">
+        <h2 id="contact-title">Contact</h2>
+        <p>I'm open to junior full stack and frontend roles. Email is the fastest way to reach me.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Tell me about the team, the product and what you'd like me to build. I usually reply within a couple of
+            days.</p>
+          <div class="email-box">
+            <code id="email-text">bhaveshagrawal633@gmail.com</code>
+            <button class="btn btn-sm" type="button" id="copy-email">Copy email</button>
+          </div>
+          <p class="mono" id="copy-status" role="status" aria-live="polite"></p>
+        </div>
+
+        <div>
+          <form class="msg" id="msg-form" novalidate aria-labelledby="form-title">
+            <h3 id="form-title" style="font-size:1.25rem;font-stretch:110%;font-weight:700">Draft a message</h3>
+            <div class="field">
+              <label for="f-name">Your name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+              <span class="err" id="e-name"></span>
+            </div>
+            <div class="field">
+              <label for="f-email">Your email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="e-email">
+              <span class="err" id="e-email"></span>
+            </div>
+            <div class="field">
+              <label for="f-msg">Message</label>
+              <textarea id="f-msg" name="message" required aria-describedby="e-msg"></textarea>
+              <span class="err" id="e-msg"></span>
+            </div>
+            <button class="btn btn-primary" type="submit">Prepare message</button>
+            <p class="form-note">This page has no mail server. The button prepares your message so you can copy it and
+              send it to my email.</p>
+            <div class="result" id="result" hidden>
+              <label for="out" style="font-weight:600">Your message is ready</label>
+              <div class="field"><textarea id="out" readonly></textarea></div>
+              <div class="btn-row"><button class="btn btn-sm" type="button" id="copy-msg">Copy message</button></div>
+              <p class="mono" id="msg-status" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> Bhavesh Agrawal. Built in Bhilai.</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+  <script src="main.js" defer></script>
+</body>
+
+</html>
